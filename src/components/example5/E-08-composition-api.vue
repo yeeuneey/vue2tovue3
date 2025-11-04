@@ -83,7 +83,7 @@ export default {
       message,
       fullName,
       greet,
-      resetGreetCount,
+      resetGreetCount
     };
   }
 };

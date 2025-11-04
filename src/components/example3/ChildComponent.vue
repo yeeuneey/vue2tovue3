@@ -1,4 +1,3 @@
-<!-- ChildComponent.vue -->
 <template>
   <div>
     <p>{{ message }}</p>
@@ -7,7 +6,15 @@
 </template>
 
 <script>
-export default {
-  props: ['message']
-};
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  name: 'ChildComponent',
+  props: {
+    message: {
+      type: String,
+      required: true
+    }
+  }
+})
 </script>
